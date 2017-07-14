@@ -4,8 +4,15 @@
    Author's custom styles
    ========================================================================== */
 
+/*.mainBackground{
+	background-color: blue;
+	color:;
+}*/
 
-
+.introDiv{
+	text-align: center;
+	padding: 10px; 
+}
 
 
 
