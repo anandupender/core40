@@ -14,7 +14,35 @@
 	padding: 10px; 
 }
 
+img{
+	height:100px;
+	margin:20px;
+}
 
+.btn{
+	background-color: white;
+	border: 2px solid black;
+	color: black;
+}
+
+.btn:hover{
+	background-color: black;
+	dborder: 2px solid black;
+}
+
+.nav{
+	background-color: #f0f0f0;
+	height: 90px;
+	width:100%;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+}
+
+.icons{
+	height: 50px;
+	margin: 5px;
+}
 
 
 

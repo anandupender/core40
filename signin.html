@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/signin.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 
   </head>
 
@@ -25,16 +26,15 @@
           <input id="photoButton" type="file" accept="image/*">
         </div>
         <br>
-        <label for="inputID" class="sr-only">Encampment id</label>
-        <input id="inputID" class="form-control" placeholder="1038748" required autofocus>
-        <label for="inputName" class="sr-only">Name</label>
-        <input type="password" id="inputName" class="form-control" placeholder="Jon Smith" required>
+        <input id="inputId" class="form-control" placeholder="Encampment id" required autofocus>
+        <input id="inputName" class="form-control" placeholder="Full Name" required>
+        <input id="inputPhone" class="form-control" placeholder="Phone Number" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <a href="howTo.html" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</a>
+        <a onclick="logUser()" href="howTo.html" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</a>
       </form>
 
     </div> <!-- /container -->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+
+  </head>
+
+  <body class="introDiv">
+
+    <h2> Sanctuary 21 </h2>
+    <br>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Creator</th>
+            <th>Dispute</th>
+          </tr>
+        </thead>
+        <tbody id="disputes">
+          <tr>
+            <td>Ali</td>
+            <td>Someone stole my bike</td>
+          </tr>
+          <tr>
+            <td>Diamo</td>
+            <td>Brad brought in too many new people</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br><br>
+     <form class="form-signin">
+        <h4 class="form-signin-heading">Enter a new dispute</h4>
+        <br>
+        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
+        <input onclick="addRow()" type="button" value="Submit">	
+    </form>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <div class="nav">
+      <a class="navbar-brand" href="dispute.html">
+        <img class="icons" src="img/dispute.png" height="10" alt="">
+      </a>
+      <a class="navbar-brand" href="userHome.html">
+        <img class="icons" src="img/core40-home-button.png" height="10" alt="">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img class="icons" src="img/core40-community-button.png" height="10" alt="">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img class="icons" src="img/core40-resources-button.png" height="10" alt="">
+      </a>
+    </div>
+  </body>
+</html>
