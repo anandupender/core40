@@ -19,8 +19,8 @@ function getUser(){
 	console.log(id);
 }
 
-function addRow() {
-    var tableBody = document.getElementById("disputes");
+function addRow(dispute) {
+    var tableBody = document.getElementById(dispute);
     var row= document.createElement("tr");
 
     var name = "Bob";

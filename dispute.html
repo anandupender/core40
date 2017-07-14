@@ -18,35 +18,68 @@
 
   <body class="introDiv">
 
-    <h2> Sanctuary 21 </h2>
-    <br>
+    <h2> Sanctuary 21 Disputes</h2>
+    <br>    <hr>
+
+    <h4>Becca: There are too many new people</h4>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
             <th>Creator</th>
-            <th>Dispute</th>
+            <th>Resolution</th>
           </tr>
         </thead>
-        <tbody id="disputes">
+        <tbody id="disputes1">
           <tr>
             <td>Ali</td>
-            <td>Someone stole my bike</td>
+            <td>Let's petition to get more space for the camp, we deserve it</td>
           </tr>
           <tr>
             <td>Diamo</td>
-            <td>Brad brought in too many new people</td>
+            <td>They could stay at the area under the bridge near the camp</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <br><br>
-     <form class="form-signin">
-        <h4 class="form-signin-heading">Enter a new dispute</h4>
-        <br>
+    <form class="form-signin">
+        <p class="newResolution"">Enter a new resolution</p>
         <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
-        <input onclick="addRow()" type="button" value="Submit">	
+        <input onclick="addRow('disputes1')" type="button" value="Submit">	
     </form>
+    <hr>
+
+    <h4>Mark: Someone stole my bike!</h4>
+	<div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Creator</th>
+            <th>Resolution</th>
+          </tr>
+        </thead>
+        <tbody id="disputes2">
+          <tr>
+            <td>Ali</td>
+            <td>Someone stole my bike</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   <form class="form-signin">
+        <p class="newResolution">Enter a new resolution</p>
+        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
+        <input onclick="addRow('disputes2')" type="button" value="Submit">	
+    </form>
+
+    <hr>
+     <form class="form-signin">
+        <h3 class="newResolution">Do you have a new dispute</h3>
+        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
+        <input onclick="" type="button" value="Submit">	
+    </form>
+
+    <div class="container"></div>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -60,11 +93,8 @@
       <a class="navbar-brand" href="userHome.html">
         <img class="icons" src="img/core40-home-button.png" height="10" alt="">
       </a>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="community.html">
         <img class="icons" src="img/core40-community-button.png" height="10" alt="">
-      </a>
-      <a class="navbar-brand" href="#">
-        <img class="icons" src="img/core40-resources-button.png" height="10" alt="">
       </a>
     </div>
   </body>
