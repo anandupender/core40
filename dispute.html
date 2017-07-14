@@ -21,63 +21,66 @@
     <h2> Sanctuary 21 Disputes</h2>
     <br>    <hr>
 
-    <h4>Becca: There are too many new people</h4>
-    <div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Creator</th>
-            <th>Resolution</th>
-          </tr>
-        </thead>
-        <tbody id="disputes1">
-          <tr>
-            <td>Ali</td>
-            <td>Let's petition to get more space for the camp, we deserve it</td>
-          </tr>
-          <tr>
-            <td>Diamo</td>
-            <td>They could stay at the area under the bridge near the camp</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div id="allDisputes">
+	    <h4>Becca: There are too many new people</h4>
+	    <div class="table-responsive">
+	      <table class="table">
+	        <thead>
+	          <tr>
+	            <th>Creator</th>
+	            <th>Resolution</th>
+	          </tr>
+	        </thead>
+	        <tbody id="disputes1">
+	          <tr>
+	            <td>Ali</td>
+	            <td>Let's petition to get more space for the camp, we deserve it</td>
+	          </tr>
+	          <tr>
+	            <td>Diamo</td>
+	            <td>They could stay at the area under the bridge near the camp</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+	    <form class="form-signin">
+	        <p class="newResolution"">Enter a new resolution</p>
+	        <input id="newDisputeInput1" class="form-control" placeholder="new resolution" required autofocus>
+	        <input onclick="addRow('disputes1', 'newDisputeInput1')" type="button" value="Submit">	
+	    </form>
+	    <hr>
+
+	    <h4>Mark: Someone stole my bike!</h4>
+		<div class="table-responsive">
+	      <table class="table">
+	        <thead>
+	          <tr>
+	            <th>Creator</th>
+	            <th>Resolution</th>
+	          </tr>
+	        </thead>
+	        <tbody id="disputes2">
+	          <tr>
+	            <td>Ali</td>
+	            <td>Someone stole my bike</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+	   <form class="form-signin">
+	        <p class="newResolution">Enter a new resolution</p>
+	        <input id="newDisputeInput2" class="form-control" placeholder="new resolution" required autofocus>
+	        <input onclick="addRow('disputes2', 'newDisputeInput2')" type="button" value="Submit">	
+	    </form>
+	</div>
+
+    <hr>
+
     <form class="form-signin">
-        <p class="newResolution"">Enter a new resolution</p>
-        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
-        <input onclick="addRow('disputes1')" type="button" value="Submit">	
-    </form>
-    <hr>
-
-    <h4>Mark: Someone stole my bike!</h4>
-	<div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Creator</th>
-            <th>Resolution</th>
-          </tr>
-        </thead>
-        <tbody id="disputes2">
-          <tr>
-            <td>Ali</td>
-            <td>Someone stole my bike</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-   <form class="form-signin">
-        <p class="newResolution">Enter a new resolution</p>
-        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
-        <input onclick="addRow('disputes2')" type="button" value="Submit">	
-    </form>
-
-    <hr>
-     <form class="form-signin">
         <h3 class="newResolution">Do you have a new dispute</h3>
-        <input id="newDisputeInput" class="form-control" placeholder="Someone stole my bike wheel." required autofocus>
-        <input onclick="" type="button" value="Submit">	
-    </form>
+        <input id="newDisputeActual" class="form-control" placeholder="new dispute" required autofocus>
+        <input onclick="newDispute()" type="button" value="Submit">	
+	</form>
 
     <div class="container"></div>
     

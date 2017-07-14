@@ -19,12 +19,12 @@ function getUser(){
 	console.log(id);
 }
 
-function addRow(dispute) {
+function addRow(dispute, disputeText) {
     var tableBody = document.getElementById(dispute);
     var row= document.createElement("tr");
 
-    var name = "Bob";
-   	var newDispute = document.getElementById("newDisputeInput").value;
+    var name = "Anand";
+   	var newDispute = document.getElementById(disputeText).value;
 
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
@@ -37,4 +37,15 @@ function addRow(dispute) {
 
     tableBody.appendChild(row);
     console.log("done");
+}
+
+function newDispute(){
+	var mainDiv = document.getElementById("allDisputes");
+
+	var newDispute= document.createElement("h4");
+	newDispute.innerHTML = "Anand: " + document.getElementById("newDisputeActual").value;
+
+	mainDiv.appendChild(newDispute);
+	var line = document.createElement("hr");
+	mainDiv.appendChild(line);
 }
